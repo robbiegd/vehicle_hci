@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-<div class="knob-surround">
+<div class="knob-surround d-none">
 
     <div class="knob" ></div>
 
@@ -56,8 +56,100 @@
                     <img src="img/123.png" style="width: 100%;">
             </section>
             </div>
-            <div class="col-xl-8 col-lg-8 col-md-8 pl-0">
-                <div id="map"></section></div>
+            <div class="col-xl-8 col-lg-8 col-md-8 pl-0 map-container">
+                <div id="map"></div>
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-8 music-container p-5 d-none" style="border-radius: 5px;"><!-- d-none -->
+                <!-- Top Section -->
+                <div class="row justify-content-between mb-4 br-top-left-5 br-top-right-5" style="box-shadow: 0px 10px 35px 0px #131313;">
+                        <div class="col-xl-4 col-lg-4 col-md-4">
+                            <div class="row">
+                                <div class="col-xl-5 col-lg-5 col-md-5 pl-0 br-top-left-5">
+                                    <img class="br-top-left-5" src="https://upload.wikimedia.org/wikipedia/en/d/dc/Damn._Kendrick_Lamar.jpg" alt="Kendrick's Damn" width="100" height="100">
+                                </div>
+                                <div class="col-xl-7 col-lg-7 col-md-7">
+                                    <div class="row  justify-content-start flex-column">
+                                        <span class="fs-sm fa fa-heart-o" style="color: #666666;"></span>
+                                        <span class="fs-sm fc-white">DNA</span>
+                                        <span class="fs-sm fc-white">Kendrick Lamar</span>
+                                        <span class="fs-sm" style="color: #666666;">DAMN.</span>
+                                        <span class="fc-white" style="font-size: 8px; text-align: right; color: #666666;">-1:43</span>
+                                        <div style="height: 2px; background-color: #c1c1c1;">
+                                            <span style="background-color: #434343; width: 10%; height: 100%; display: block"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 col-md-7 align-self-center">
+                            <div class="row justify-content-between">
+                                <div class="col-xl-2 fa-2x fc-white fa fa-step-backward"></div>
+                                <div class="col-xl-2 fa-2x fc-white fa fa-play"></div>
+                                <div class="col-xl-2 fa-2x fc-white fa fa-step-forward"></div>
+                                <div class="col-xl-2 fa-2x fc-white fa fa-search"></div>
+                                <div class="col-xl-2 fa-2x fc-white fa fa-eject"></div>
+                            </div>
+                        </div>
+                </div>
+                <!-- Search Section -->
+                <div class="row align-items-center mb-3 px-4" style="background-color: #131313;">
+                    <div class="col-xl-3 col-lg-3 col-md-3 ml-4 mr-3 mt-1 mb-1">
+                        <div class="input-group">
+                            <span class="input-group-addon fa fa-search fc-white" style="background-color: #131313; border-right: none;"></span>
+                            <input type="text" class="form-control" placeholder="Anything" style="background-color: #131313; border-left: none;">
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-5">
+                        <div class="row justify-content-evenly">
+                            <span class="fc-white">Streaming</span>
+                            <span class="fc-light-grey">Radio</span>
+                            <span class="fc-light-grey">USB</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Favorites Section -->
+                <div class="row align-items-center flex-column px-4 mb-3">
+                    <span class="fc-white mb-3">Favorites</span>
+                    <div class="col-xl-11 col-lg-11 col-md-11">
+                        <div class="row justify-content-start align-content-start">
+                            <img class="br-5 mr-3" src="http://www.egotripland.com/wp-content/uploads/2011/11/Madvillian_Cover.jpeg" alt="" width="110" height="110">
+                            <img class="br-5 mr-3" src="https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg" alt="" width="110" height="110">
+                            <img class="br-5 mr-3" src="http://www.hotnewhiphop.com/public/userfiles/2012/09/kendrick-lamar-good-kid-maad-city.jpg" alt="" width="110" height="110">
+                            <img class="br-5 mr-3" src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/3/11/1426099817173/f1efb3f4-9a6d-4f78-8ca8-594ab646d198-bestSizeAvailable.jpeg?w=300&q=55&auto=format&usm=12&fit=max&s=3bb5698b6946ef830da757ccf6bba51b" alt="" width="110" height="110">
+                            <img class="br-5 mr-3" src="https://images.rapgenius.com/d9c0095637ac2617ded90b9a1dfc34f6.620x620x1.jpg" alt="" width="110" height="110">
+                            <img class="br-5 mr-3" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/96/RunTheJewels3.jpg/220px-RunTheJewels3.jpg" alt="" width="110" height="110">   
+                        </div>
+                    </div>
+                </div>
+                <!-- Top Stations -->
+                <div class="row align-items-center flex-column px-4">
+                    <span class="fc-white mb-4">Top Stations</span>
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 mb-4">
+                            <div class="row justify-content-start align-content-start">
+                                <img class="br-5 mr-3" src="http://www.egotripland.com/wp-content/uploads/2011/11/Madvillian_Cover.jpeg" alt="" width="110" height="110">
+                                <img class="br-5 mr-3" src="https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg" alt="" width="110" height="110">
+                                <img class="br-5 mr-3" src="http://www.hotnewhiphop.com/public/userfiles/2012/09/kendrick-lamar-good-kid-maad-city.jpg" alt="" width="110" height="110">
+                                <img class="br-5 mr-3" src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/3/11/1426099817173/f1efb3f4-9a6d-4f78-8ca8-594ab646d198-bestSizeAvailable.jpeg?w=300&q=55&auto=format&usm=12&fit=max&s=3bb5698b6946ef830da757ccf6bba51b" alt="" width="110" height="110">
+                                <img class="br-5 mr-3" src="https://images.rapgenius.com/d9c0095637ac2617ded90b9a1dfc34f6.620x620x1.jpg" alt="" width="110" height="110">
+                                <img class="br-5 mr-3" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/96/RunTheJewels3.jpg/220px-RunTheJewels3.jpg" alt="" width="110" height="110">   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 mb-4">
+                                <div class="row justify-content-start align-content-start">
+                                    <img class="br-5 mr-3" src="http://www.egotripland.com/wp-content/uploads/2011/11/Madvillian_Cover.jpeg" alt="" width="110" height="110">
+                                    <img class="br-5 mr-3" src="https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg" alt="" width="110" height="110">
+                                    <img class="br-5 mr-3" src="http://www.hotnewhiphop.com/public/userfiles/2012/09/kendrick-lamar-good-kid-maad-city.jpg" alt="" width="110" height="110">
+                                    <img class="br-5 mr-3" src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/3/11/1426099817173/f1efb3f4-9a6d-4f78-8ca8-594ab646d198-bestSizeAvailable.jpeg?w=300&q=55&auto=format&usm=12&fit=max&s=3bb5698b6946ef830da757ccf6bba51b" alt="" width="110" height="110">
+                                    <img class="br-5 mr-3" src="https://images.rapgenius.com/d9c0095637ac2617ded90b9a1dfc34f6.620x620x1.jpg" alt="" width="110" height="110">
+                                    <img class="br-5 mr-3" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/96/RunTheJewels3.jpg/220px-RunTheJewels3.jpg" alt="" width="110" height="110">   
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
         </div>
     </div>
 
